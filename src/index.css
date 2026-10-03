@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-chatBg: #74b7ed;
+  --color-tgSidebar: #ffffff;
+  --color-tgActive: #2f8ccd;
+  --color-tgGray: #f1f1f1;
+  --color-tgTextGray: #707579;
+}
+
+/* Базовые настройки отображения */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #e7ebf0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Фикс для высоты приложения под весь экран */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
