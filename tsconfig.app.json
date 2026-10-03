@@ -6,7 +6,9 @@
     "module": "esnext",
     "types": ["vite/client"],
     "allowArbitraryExtensions": true,
+				"allowUnreachableCode": false,
     "skipLibCheck": true,
+				"allowEmptyCodegenFiles": true
 
     /* Bundler mode */
     "moduleResolution": "bundler",
@@ -22,5 +24,6 @@
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"]
+    "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.d.ts"]
+
 }
